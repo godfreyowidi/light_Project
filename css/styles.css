@@ -61,7 +61,6 @@ nav .search_box input {
   height: 90%;
   padding: 0 10px;
   font-size: 15px;
-  width: 300%;
 }
 
 nav .search_box span {
@@ -80,5 +79,18 @@ nav .search_box span::after {
   width: 100%;
   content: '';
   background: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.3s;
 }
+
+nav .search_box span:hover::after {
+  width: 100%;
+}
+
+
+
+
 
