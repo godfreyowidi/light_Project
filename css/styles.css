@@ -14,12 +14,13 @@ nav {
   justify-content: space-between;
   text-align: center;
   padding: 15px 30px;
+  top: 70px;
 }
 
-nav icon {
-  font-size: 35px;
+nav .icon {
+  font-size: 30px;
   font-weight: 800;
-  color: aliceblue;
+  color: rgb(224, 248, 188);
   cursor: pointer;
 }
 
@@ -40,4 +41,44 @@ nav ol li a {
   text-transform: capitalize;
   letter-spacing: 1px;
   padding: 5px 10px;
-  }
+}
+
+nav ol li a:hover {
+  color: rgb(243, 237, 237);
+}
+
+nav .search_box {
+  display: flex;
+  margin: auto 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+nav .search_box input {
+  border: none;
+  outline: none;
+  background: rgb(247, 245, 241);
+  height: 90%;
+  padding: 0 10px;
+  font-size: 15px;
+  width: 300%;
+}
+
+nav .search_box span {
+  color: rgb(117, 182, 117);
+  font-size: 20px;
+  background: whitesmoke;
+  height: 90%;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav .search_box span::after {
+  height: 90;
+  width: 100%;
+  content: '';
+  background: yellow;
+}
+
