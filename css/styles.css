@@ -1,24 +1,43 @@
-.top_Navbar {
-  background-color: rgb(148, 148, 175);
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
 
-.top_Navbar a {
-  float: left;
-  color: whitesmoke;
+nav {
+  display: flex;
+  width: 100%;
+  background: rgb(36, 190, 49);
+  position: relative;
+  justify-content: space-between;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 30px;
+}
+
+nav icon {
+  font-size: 35px;
+  font-weight: 800;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+nav ol {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ol li {
+  margin: 0 3px;
+}
+
+nav ol li a {
+  color: rgb(60, 114, 114);
+  font-size: 20px;
   text-decoration: none;
-  font-size: 17px;
-}
-
-.top_Navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.top_Navbar a.active {
-  background-color: rgb(38, 180, 38);
-  color: whitesmoke;
-}
-
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  }
